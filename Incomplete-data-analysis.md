@@ -441,13 +441,14 @@ not the same as before as we imputed the donor values at the end of the
 list. That means that we cannot align the recovery time with other
 columns with the recovery time being as it is. The correlation formula
 of Pearson is in the form of :
-![r\_{xy}=\\frac{n\\sum\_{i=1}^{n}(x\_{i}-\\overline{\\rm
-x})(y\_{i}-\\overline{\\rm
-y})}{\\sqrt\\sum\_{i=1}^{n}(x\_{i}-\\overline{\\rm
-x})^2\\sqrt\\sum\_{i=1}^{n}(y\_{i}-\\overline{\\rm
-y})^2}](https://latex.codecogs.com/png.latex?r_%7Bxy%7D%3D%5Cfrac%7Bn%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%28x_%7Bi%7D-%5Coverline%7B%5Crm%20x%7D%29%28y_%7Bi%7D-%5Coverline%7B%5Crm%20y%7D%29%7D%7B%5Csqrt%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%28x_%7Bi%7D-%5Coverline%7B%5Crm%20x%7D%29%5E2%5Csqrt%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%28y_%7Bi%7D-%5Coverline%7B%5Crm%20y%7D%29%5E2%7D
-"r_{xy}=\\frac{n\\sum_{i=1}^{n}(x_{i}-\\overline{\\rm x})(y_{i}-\\overline{\\rm y})}{\\sqrt\\sum_{i=1}^{n}(x_{i}-\\overline{\\rm x})^2\\sqrt\\sum_{i=1}^{n}(y_{i}-\\overline{\\rm y})^2}")
-, which verifies that we need to have our data ordered. So we will first
+![r\_{xy}=](https://latex.codecogs.com/png.latex?r_%7Bxy%7D%3D
+"r_{xy}=")![\\frac{n\\sum\_{i=1}^{n}(x\_{i}-\\overline{\\rm x})
+(y\_{i}-\\overline{\\rm
+y})}{\\sqrt{\\sum\_{i=1}^{n}(x\_{i}-\\overline{\\rm
+x})^2\\sum\_{i=1}^{n}(y\_{i}-\\overline{\\rm
+y})^2}}](https://latex.codecogs.com/png.latex?%5Cfrac%7Bn%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%28x_%7Bi%7D-%5Coverline%7B%5Crm%20x%7D%29%20%28y_%7Bi%7D-%5Coverline%7B%5Crm%20y%7D%29%7D%7B%5Csqrt%7B%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%28x_%7Bi%7D-%5Coverline%7B%5Crm%20x%7D%29%5E2%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%28y_%7Bi%7D-%5Coverline%7B%5Crm%20y%7D%29%5E2%7D%7D
+"\\frac{n\\sum_{i=1}^{n}(x_{i}-\\overline{\\rm x}) (y_{i}-\\overline{\\rm y})}{\\sqrt{\\sum_{i=1}^{n}(x_{i}-\\overline{\\rm x})^2\\sum_{i=1}^{n}(y_{i}-\\overline{\\rm y})^2}}"),
+which verifies that we need to have our data ordered. So we will first
 order our column and then calculate the correlations.
 
 ``` r
