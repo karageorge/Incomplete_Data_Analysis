@@ -2,7 +2,9 @@
 title: "Incomplete Data Analysis"
 author: "Stefanos Karageorgiou"
 date: "10/28/2019"
-output: html_document
+output: 
+   github_document: 
+       pandoc_args: --webtex
 ---
 
 ```{r setup, include=FALSE}
